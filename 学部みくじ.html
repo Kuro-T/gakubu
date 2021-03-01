@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="学部みくじ.css">
+  <title>Document</title>
+</head>
+<body>
+  <input id="omikuji_btn" type="button" value="学部を決める" class="btn-square-shadow">
+  <script>
+  document.getElementById( "omikuji_btn" ).onclick = function(){
+    var rnd = Math.floor( Math.random() * 10 );
+    var gakubu;
+    alert(rnd);
+    if(rnd>4){
+      gakubu="農学部";
+    }else{
+      gakubu="工学部";
+    }
+    alert(gakubu);
+  }
+  </script>
+
+</body>
+</html>
