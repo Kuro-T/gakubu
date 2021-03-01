@@ -12,12 +12,14 @@
   </div>
   <script>
   document.getElementById( "omikuji_btn" ).onclick = function(){
-    var rnd = Math.floor( Math.random() * 10 );
+    var rnd = Math.floor( Math.random() * 100 );
     var gakubu;
-    if(rnd>4){
+    if(rnd>50){
       gakubu="農学部";
-    }else{
+    }else if(rnd>2){
       gakubu="工学部";
+    }else{
+      gakubu="水産学部";
     }
     alert(gakubu);
   }
