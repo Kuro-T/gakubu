@@ -14,12 +14,18 @@
   document.getElementById( "omikuji_btn" ).onclick = function(){
     var rnd = Math.floor( Math.random() * 100 );
     var gakubu;
-    if(rnd>50){
+    if(rnd>59){
       gakubu="農学部";
-    }else if(rnd>2){
+    }else if(rnd>19){
       gakubu="工学部";
-    }else{
+    }else if(rnd>9){
+      gakubu="教育学部";
+    }else if(rnd>7){
+      gakubu="理学部数学科";
+    }else if(rnd>5){
       gakubu="水産学部";
+    }else{
+      gakubu="東北大学";
     }
     alert(gakubu);
   }
